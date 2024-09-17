@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ErvieJohn/ErvsRDP/refs/heads/master/Downloads.bat?token=GHSAT0AAAAAACVNGRNNYIIYLJGI4XVS6E3WZXJRCEA" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ErvieJohn/ErvsRDP/refs/heads/master/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Connect to LiteManager
